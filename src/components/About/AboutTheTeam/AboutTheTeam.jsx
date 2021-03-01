@@ -17,12 +17,6 @@ export default function AboutTheTeam() {
           <TeamMember />
           <TeamMember />
           <TeamMember />
-          <TeamMember />
-          <TeamMember />
-          <TeamMember />
-          <TeamMember />
-          <TeamMember />
-          <TeamMember />
         </div>
       </div>
     </div>
