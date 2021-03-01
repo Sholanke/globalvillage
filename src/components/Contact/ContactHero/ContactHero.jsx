@@ -23,7 +23,7 @@ export default function ContactHero() {
             <BaseInput />
             <BaseInput />
             <BaseTextarea />
-            <BaseButton>Button</BaseButton>
+            <BaseButton>Send Message</BaseButton>
           </form>
         </div>
       </div>
