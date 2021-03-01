@@ -1,0 +1,38 @@
+.about-who-we-are {
+  padding-top: 188px;
+  padding-bottom: 130px;
+  background: #fff;
+
+  &__grid {
+    display: grid;
+    grid-gap: 42px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+
+    .heading {
+      max-width: 399px;
+      .co-green {
+        color: var(--green);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      &__description {
+        padding-left: 20px;
+        border-left: 1px solid var(--green);
+        margin-top: 38px;
+        font-size: 16px;
+        line-height: 1.75;
+      }
+    }
+    > h2 {
+      max-width: 499px;
+      font-size: 37px;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+    .description {
+      line-height: 1.78;
+    }
+  }
+}

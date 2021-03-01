@@ -1,0 +1,29 @@
+.careers-ready-to-join {
+  .app-wrapper {
+    background: var(--black);
+    background-image: url("../../../assets/svg/joinPattern.svg");
+    background-position: 50px;
+    color: #fff;
+    padding: 72px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+  }
+  .text-holder {
+    max-width: 476px;
+    margin-right: 130px;
+
+    h2 {
+      font-size: 37px;
+      line-height: 1.62;
+      letter-spacing: 0.2px;
+    }
+    p {
+      line-height: 2;
+      font-size: 16px;
+      margin-top: 8px;
+      max-width: 325px;
+    }
+  }
+}

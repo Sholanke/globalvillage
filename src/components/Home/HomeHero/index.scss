@@ -1,0 +1,49 @@
+.home-hero {
+  background: var(--black);
+  background-image: url("../../../assets/svg/hero-pattern.svg");
+  background-position: top;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+
+  &__text-holder,
+  &__image-holder {
+    flex: 1;
+  }
+  &__text-holder {
+    max-width: 522px;
+
+    .heading {
+      line-height: 1.25;
+      max-width: 403px;
+    }
+    .description {
+      line-height: 2.22;
+      margin: 24px 0 40px 0;
+    }
+  }
+  .search-bar {
+    &__form {
+      align-items: flex-end;
+
+      .base-input {
+        width: fit-content;
+        flex: 1;
+
+        .label-text {
+          font-weight: 300;
+        }
+
+        .input {
+          border-color: #fff;
+        }
+      }
+      .base-button {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-left: 16px;
+        flex-shrink: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.base-input {
+  width: 100%;
+  display: block;
+
+  .label-text {
+    line-height: 2;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .input {
+    background: #fff;
+    padding: 17px 20px;
+    font-size: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    caret-color: var(--black);
+    width: 100%;
+    transition: 0.2s ease;
+
+    &:focus {
+      border-color: var(--black);
+      box-shadow: 0 0 0 5px #3535da36;
+    }
+
+    &::placeholder {
+      color: var(--placeholder-color);
+    }
+  }
+}

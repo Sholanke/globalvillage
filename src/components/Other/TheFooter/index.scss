@@ -1,0 +1,30 @@
+.app-footer {
+  background: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 130px;
+  font-size: 15px;
+  font-weight: 400;
+
+  .logo {
+    color: var(--green);
+  }
+
+  .links {
+    .link {
+      margin: 0 64px 0 0;
+    }
+  }
+  .social-media-links {
+    display: flex;
+    align-items: center;
+    
+    a {
+      margin-left: 16px;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+}
