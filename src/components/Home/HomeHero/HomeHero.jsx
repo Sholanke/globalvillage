@@ -1,6 +1,7 @@
 import React from "react";
 import BaseButton from "../../Other/Buttons/BaseButton/BaseButton";
 import BaseInput from "../../Other/Inputs/BaseInput/BaseInput";
+import homeHeroImage from "../../../assets/svg/home-hero-img.svg"
 import "./index.scss";
 
 export default function HomeHero() {
@@ -22,7 +23,9 @@ export default function HomeHero() {
             </form>
           </div>
         </div>
-        <div className="home-hero__image-holder"></div>
+        <div className="home-hero__image-holder">
+          <img src={homeHeroImage} alt="" srcset=""/>
+        </div>
       </div>
     </section>
   );
