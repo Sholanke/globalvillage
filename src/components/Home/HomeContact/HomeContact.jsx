@@ -11,10 +11,13 @@ export default function HomeContact() {
         <div className="home-contact__map">map na</div>
 
         <form action="" className="home-contact__form">
-          <BaseInput labelText="Full name *" />
-          <BaseInput labelText="Email *" />
-          <BaseInput labelText="Company *" />
-          <BaseTextarea labelText="Tell us a bit about you  *" />
+          <BaseInput labelText="Full name *" placeholder="Julia William" />
+          <BaseInput labelText="Email *" placeholder="you@example.com" />
+          <BaseInput labelText="Company *" placeholder="Abc Limited" />
+          <BaseTextarea
+            labelText="Tell us a bit about you *"
+            placeholder="How can we help you"
+          />
           <BaseButton message>Send a Message</BaseButton>
         </form>
 

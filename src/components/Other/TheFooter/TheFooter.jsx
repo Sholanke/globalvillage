@@ -1,4 +1,5 @@
 import React from "react";
+import { a, NavLink } from "react-router-dom";
 import "./index.scss";
 
 export default function TheFooter() {
@@ -12,15 +13,15 @@ export default function TheFooter() {
         </div>
 
         <div className="links">
-          <a href="/" className="link">
+          <NavLink to="/" className="link">
             Privacy Policy
-          </a>
-          <a href="/" className="link">
+          </NavLink>
+          <NavLink to="/" className="link">
             Terms of Service
-          </a>
-          <a href="/" className="link">
+          </NavLink>
+          <NavLink to="/contact" className="link">
             Contact Us
-          </a>
+          </NavLink>
         </div>
 
         <div className="social-media-links">

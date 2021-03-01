@@ -1,0 +1,26 @@
+.app-nav-bar {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  ._left {
+    .logo {
+      margin-right: 60px;
+    }
+    .link {
+      margin: 0 40px 0 0;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+
+      &.active {
+        color: var(--green);
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -89,6 +89,14 @@ a {
   line-height: 1;
   font-weight: 500;
 
+  &._inverted {
+    border: 1px solid #757588;
+    background: transparent;
+    &:after {
+      content: unset;
+    }
+  }
+
   &:after {
     content: "";
     display: block;
