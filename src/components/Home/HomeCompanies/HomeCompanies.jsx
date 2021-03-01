@@ -22,7 +22,7 @@ export default function HomeCompanies() {
           <p>With the support of</p>
         </div>
         <div className="logos">
-          <img src={globalSkill} alt="" srcset="" />
+          <img src={globalSkill} alt="" srcSet="" />
           <svg
             width="110"
             height="30"
@@ -58,8 +58,8 @@ export default function HomeCompanies() {
             </g>
           </svg>
 
-          <img src={nova} alt="" srcset="" />
-          <img src={acoa} alt="" srcset="" />
+          <img src={nova} alt="" srcSet="" />
+          <img src={acoa} alt="" srcSet="" />
         </div>
       </div>
     </section>

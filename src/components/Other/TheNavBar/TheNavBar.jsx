@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import BaseButton from "../Buttons/BaseButton/BaseButton";
 import "./index.scss";
 
 export default function TheNavBar() {
@@ -26,7 +25,9 @@ export default function TheNavBar() {
           </div>
         </div>
         <div className="_right">
-          <NavLink exact to="/contact" className="base-button _inverted">Contact Us</NavLink>
+          <NavLink exact to="/contact" className="base-button _inverted">
+            Contact Us
+          </NavLink>
         </div>
       </div>
     </div>

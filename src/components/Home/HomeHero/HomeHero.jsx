@@ -24,7 +24,7 @@ export default function HomeHero() {
           </div>
         </div>
         <div className="home-hero__image-holder">
-          <img src={homeHeroImage} alt="" srcset=""/>
+          <img src={homeHeroImage} alt="" srcSet=""/>
         </div>
       </div>
     </section>

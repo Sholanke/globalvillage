@@ -43,16 +43,16 @@ export default function TheFooter() {
               <path
                 d="M14.3333 13.3333H27.6667C28.5833 13.3333 29.3333 14.0833 29.3333 14.9999V24.9999C29.3333 25.9166 28.5833 26.6666 27.6667 26.6666H14.3333C13.4167 26.6666 12.6667 25.9166 12.6667 24.9999V14.9999C12.6667 14.0833 13.4167 13.3333 14.3333 13.3333Z"
                 stroke="#737A91"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M29.3333 15L21 20.8333L12.6667 15"
                 stroke="#737A91"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </a>
