@@ -26,5 +26,17 @@
     border-radius: 24px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    form {
+      padding: 56px;
+    }
+
+    ._left {
+        background: var(--black);
+        border-radius: 24px;
+    }
+    .base-input {
+      margin-bottom: 32px;
+    }
   }
 }

@@ -17,7 +17,7 @@ export default function ContactHero() {
         </div>
 
         <div className="contact__form">
-          <div></div>
+          <div className="_left"></div>
           <form action="">
             <BaseInput />
             <BaseInput />
