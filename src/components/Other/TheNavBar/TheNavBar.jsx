@@ -11,10 +11,13 @@ export default function TheNavBar() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       const top = window.scrollY;
       setHeaderIsReduced(top > 10);
-    });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
