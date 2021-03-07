@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.scss";
-import valueIcon from "../../../assets/svg/value-icon.svg";
+import { values } from "../../../utils/constants";
 
 export default function HomeValues() {
   return (
@@ -13,25 +13,29 @@ export default function HomeValues() {
             reliable development teams and experienced consultants.
           </p>
         </div>
-        <Value />
-        <Value />
-        <Value />
-        <Value />
+
+        {values.map((v, index) => (
+          <Value data={v} key={index} index={index} />
+        ))}
       </div>
     </div>
   );
 }
 
-function Value() {
+function Value({ data: { title, description }, index }) {
   return (
     <div className="value">
-      <img src={valueIcon} alt="" />
-      <h3>Value title goes here</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt vitae
-        ornare potenti ac nibh cursus sed magna. Neque, nunc lacus, facilisi
-        tempus aliquam lectus sed.
-      </p>
+      <svg
+        width="48"
+        height="48"
+        viewBox="0 0 48 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <use href={`/assets/ab-${index + 1}.svg#svg`} />
+      </svg>
+      <h3>{title}</h3>
+      <p>{description}</p>
     </div>
   );
 }

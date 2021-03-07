@@ -3,7 +3,7 @@
 .careers-hero {
   @include mobile {
     padding-bottom: 0;
-    
+
     &:after {
       max-height: calc(100% - 53px);
     }
@@ -58,6 +58,10 @@
 
       @include mobile {
         padding: 32px;
+      }
+
+      svg {
+        color: #4c5980;
       }
 
       .title {
