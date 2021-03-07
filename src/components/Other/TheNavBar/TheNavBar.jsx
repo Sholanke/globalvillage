@@ -27,11 +27,13 @@ export default function TheNavBar() {
     >
       <div className="app-wrapper _flex a-center j-between">
         <div className="_left _flex a-center">
-          <div className="logo">
-            <svg width="164" height="26" viewBox="0 0 164 26">
-              <use xlinkHref="/assets/logo.svg#logo" />
-            </svg>
-          </div>
+          <NavLink to="/">
+            <div className="logo">
+              <svg width="164" height="26" viewBox="0 0 164 26">
+                <use xlinkHref="/assets/logo.svg#logo" />
+              </svg>
+            </div>
+          </NavLink>
         </div>
         <div className="_right _flex a-center">
           <button
