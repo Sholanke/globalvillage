@@ -1,3 +1,5 @@
+@import "../../../styles/mixins";
+
 .app-footer {
   background: #fff;
   padding-top: 30px;
@@ -6,19 +8,43 @@
   font-size: 15px;
   font-weight: 400;
 
+  @include mobile {
+    padding-top: 42px;
+    padding-bottom: 40px;
+  }
+
+  .app-wrapper {
+    @include mobile {
+      display: block;
+    }
+  }
+
   .logo {
     color: var(--green);
   }
 
   .links {
+    @include mobile {
+      padding-top: 50px;
+      padding-bottom: 48px;
+    }
     .link {
       margin: 0 64px 0 0;
+
+      @include mobile {
+        display: block;
+        margin-bottom: 48px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
   }
   .social-media-links {
     display: flex;
     align-items: center;
-    
+
     a {
       margin-left: 16px;
 

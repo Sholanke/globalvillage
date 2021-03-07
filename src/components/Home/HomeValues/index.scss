@@ -1,3 +1,5 @@
+@import "../../../styles/mixins";
+
 .home-values {
   padding-top: 136px;
   padding-bottom: 136px;
@@ -6,8 +8,12 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 60px;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
 
     p {
       color: #f8f8f8;
@@ -20,8 +26,14 @@
       }
     }
     .value {
-      padding: 67px 48px;
+      padding: 48px;
+      padding-bottom: 67px;
       background: rgba(255, 255, 255, 0.03);
+
+      @include mobile {
+        padding: 30px;
+        padding-bottom: 67px;
+      }
 
       img {
         margin-bottom: 40px;

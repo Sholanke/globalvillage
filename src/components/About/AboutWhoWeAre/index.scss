@@ -1,16 +1,26 @@
-.about-who-we-are {
-  padding-top: 188px;
-  padding-bottom: 130px;
-  background: #fff;
+@import "../../../styles/mixins";
 
+.about-who-we-are {
   &__grid {
     display: grid;
-    grid-gap: 42px;
+    grid-gap: 78px;
+    grid-row-gap: 24px;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
+    max-width: 1070px !important;
+    padding: 64px 40px;
+    background: #fff;
+    box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.02);
+    border-radius: 16px;
+    align-items: flex-end;
+    margin-top: -64px;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      padding: 56px 16px;
+    }
 
     .heading {
-      max-width: 399px;
       .co-green {
         color: var(--green);
         font-weight: 600;
@@ -19,17 +29,23 @@
       }
       &__description {
         padding-left: 20px;
-        border-left: 1px solid var(--green);
+        border-left: 3px solid var(--green);
         margin-top: 38px;
         font-size: 16px;
         line-height: 1.75;
       }
     }
-    > h2 {
-      max-width: 499px;
-      font-size: 37px;
+    ._big-text {
+      font-size: 24px;
       font-weight: 600;
-      line-height: 1.35;
+      line-height: 1.58;
+      margin-top: 50px;
+
+      @include mobile {
+        font-weight: 600;
+        margin-top: 35px;
+        font-size: 21px;
+      }
     }
     .description {
       line-height: 1.78;

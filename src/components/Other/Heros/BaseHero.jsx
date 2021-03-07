@@ -1,15 +1,15 @@
 import React from "react";
 import "./index.scss";
 
-export default function BaseHero() {
+export default function BaseHero({ className = "" }) {
   return (
-    <div className="base-hero">
+    <div className={`base-hero ${className}`}>
       <div className="app-wrapper heading">
-        <h1>Experience you can trust</h1>
+        <h1>Technology and business professionals committed to YOU</h1>
         <p>
-          Global Villages' solution is a three-pronged approach to stimulate
-          regional growth by transforming the digital economy in Nova Scotia’s
-          rural communities.
+          We're technology and business professionals enthusiastic about
+          providing high-impact solutions while doing what we love and having
+          fun
         </p>
       </div>
     </div>

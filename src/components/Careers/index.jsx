@@ -9,7 +9,7 @@ export default function index() {
   return (
     <>
       <TheNavBar />
-      <BaseHero />
+      <BaseHero className="careers-hero" />
       <CareersJoinUs />
       <CareersReadyToJoin />
       <TheFooter />

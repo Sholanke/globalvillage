@@ -1,3 +1,5 @@
+@import "../../../styles/mixins";
+
 .careers-ready-to-join {
   .app-wrapper {
     background: var(--black);
@@ -9,15 +11,35 @@
     align-items: center;
     justify-content: center;
     border-radius: 24px;
+
+    @include mobile {
+      display: block;
+      text-align: center;
+
+      .base-button {
+        margin: 0 auto;
+      }
+    }
   }
   .text-holder {
     max-width: 476px;
     margin-right: 130px;
 
+    @include mobile {
+      max-width: unset;
+      margin-right: 0;
+      margin-bottom: 32px;
+    }
+
     h2 {
       font-size: 37px;
       line-height: 1.62;
       letter-spacing: 0.2px;
+
+      @include mobile {
+        font-size: 32px;
+        line-height: 1.25;
+      }
     }
     p {
       line-height: 2;

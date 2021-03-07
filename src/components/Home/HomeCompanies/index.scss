@@ -1,3 +1,5 @@
+@import "../../../styles/mixins";
+
 .home-companies {
   padding-top: 130px;
   padding-bottom: 130px;
@@ -5,11 +7,15 @@
   .image-text-holder {
     .image-holder {
       height: 387px;
-      width: 100%;
       max-width: 696px;
       margin-right: auto;
       background: var(--black);
       border-radius: 8px;
+
+      @include mobile {
+        margin-right: 4px;
+        margin-left: 4px;
+      }
     }
     .text-holder {
       padding: 72px 53px;
@@ -21,6 +27,10 @@
       line-height: 2.22;
       margin-left: auto;
       margin-top: -229px;
+
+      @include mobile {
+        padding: 40px 16px;
+      }
     }
   }
   .company-logos {
@@ -30,9 +40,19 @@
     padding: 28px 30px;
     background: #fff;
 
+    @include mobile {
+      display: block;
+      padding: 40px 16px;
+    }
+
     .text {
       width: fit-content;
       margin-right: 134px;
+
+      @include mobile {
+        margin-right: 0;
+        margin-bottom: 34px;
+      }
       p {
         font-size: 16px;
         font-weight: 500;
@@ -44,10 +64,23 @@
       justify-content: space-between;
       flex: 1;
 
+      @include mobile {
+        flex-wrap: wrap;
+        padding: 0 8px;
+      }
+
       svg,
       img {
         height: 37px;
         filter: grayscale(1);
+
+        @include mobile {
+          margin-bottom: 46px;
+
+          &[data-no-margin] {
+            margin-bottom: 0;
+          }
+        }
       }
     }
   }

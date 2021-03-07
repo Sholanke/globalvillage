@@ -1,3 +1,5 @@
+@import "../../../styles/mixins";
+
 .home-contact {
   &__form {
     flex: 1;
@@ -10,12 +12,25 @@
     flex-shrink: 0;
     max-width: 513px;
 
+    @include mobile {
+      padding: 64px 16px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: -70px;
+    }
+
     .base-input {
       margin-bottom: 32px;
     }
 
     textarea {
       height: 137px;
+    }
+
+    &__wrapper {
+      @include mobile {
+        display: block;
+      }
     }
   }
 
@@ -28,6 +43,7 @@
     flex-shrink: 0;
     flex: 1;
   }
+
   &__map {
     height: 100%;
     background-image: url("../../../assets/svg/map.png");
@@ -42,6 +58,10 @@
     justify-content: center;
     align-items: center;
     max-width: 135px;
+
+    @include mobile {
+      display: none;
+    }
 
     .link {
       height: 40px;

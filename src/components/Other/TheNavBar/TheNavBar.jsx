@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./index.scss";
 
 export default function TheNavBar() {
+  const [menuIsActive, setMenuIsActive] = useState(false);
+  const [headerIsReduced, setHeaderIsReduced] = useState(window.scrollY > 10);
+
+  const toggleMenuState = () => {
+    setMenuIsActive(prevState => !prevState);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const top = window.scrollY;
+      setHeaderIsReduced(top > 10);
+    });
+  }, []);
+
   return (
-    <div className="app-container app-nav-bar">
+    <div
+      className="app-container app-nav-bar"
+      data-is-reduced={headerIsReduced}
+    >
       <div className="app-wrapper _flex a-center j-between">
         <div className="_left _flex a-center">
           <div className="logo">
@@ -12,7 +29,17 @@ export default function TheNavBar() {
               <use xlinkHref="/assets/logo.svg#logo" />
             </svg>
           </div>
-          <div className="_links">
+        </div>
+        <div className="_right _flex a-center">
+          <button
+            className="menu-btn"
+            onClick={toggleMenuState}
+            data-is-active={menuIsActive}
+          >
+            <span className="line" />
+          </button>
+
+          <div className="_links _flex a-center" data-is-active={menuIsActive}>
             <NavLink exact to="/" className="link">
               Home
             </NavLink>
@@ -22,12 +49,10 @@ export default function TheNavBar() {
             <NavLink exact to="/careers" className="link">
               Careers
             </NavLink>
+            <NavLink exact to="/contact" className="base-button _inverted">
+              Contact Us
+            </NavLink>
           </div>
-        </div>
-        <div className="_right">
-          <NavLink exact to="/contact" className="base-button _inverted">
-            Contact Us
-          </NavLink>
         </div>
       </div>
     </div>

@@ -58,8 +58,8 @@ export default function HomeCompanies() {
             </g>
           </svg>
 
-          <img src={nova} alt="" srcSet="" />
-          <img src={acoa} alt="" srcSet="" />
+          <img src={nova} alt="" srcSet="" data-no-margin />
+          <img src={acoa} alt="" srcSet="" data-no-margin />
         </div>
       </div>
     </section>
