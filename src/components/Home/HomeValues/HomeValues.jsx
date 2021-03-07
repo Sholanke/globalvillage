@@ -9,8 +9,8 @@ export default function HomeValues() {
         <div className="heading">
           <h1>Our Values</h1>
           <p>
-            We help leading brands and startups build software by providing
-            reliable development teams and experienced consultants.
+            We believe in providing simple solutions to the tough problems with
+            a core focus on our people and user
           </p>
         </div>
 
