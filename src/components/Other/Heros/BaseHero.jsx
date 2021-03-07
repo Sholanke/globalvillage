@@ -4,7 +4,7 @@ import "./index.scss";
 export default function BaseHero({ className = "", title, description }) {
   return (
     <div className={`base-hero ${className}`}>
-      <div className="app-wrapper heading">
+      <div className="app-wrapper heading" data-aos="fade-up">
         <h1>
           {title || "Technology and business professionals committed to YOU"}
         </h1>

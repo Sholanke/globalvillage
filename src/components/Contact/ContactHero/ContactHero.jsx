@@ -16,8 +16,8 @@ export default function ContactHero() {
       />
       <div className="app-container">
         <div className="app-wrapper">
-          <div className="contact__form">
-            <div className="_left">
+          <div className="contact__form" data-aos="fade-up">
+            <div className="_left" data-aos="fade-up">
               <div className="_top">
                 <h4>Our Contact Information</h4>
                 <p className="description">

@@ -4,7 +4,7 @@ import "./index.scss";
 
 export default function CareersReadyToJoin() {
   return (
-    <div className="app-container careers-ready-to-join">
+    <div className="app-container careers-ready-to-join" data-aos="fade-up">
       <div className="app-wrapper">
         <div className="text-holder">
           <h2>Ready to Join our Team?</h2>

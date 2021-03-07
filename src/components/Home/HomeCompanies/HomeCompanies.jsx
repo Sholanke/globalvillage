@@ -8,16 +8,16 @@ export default function HomeCompanies() {
   return (
     <section className="app-container home-companies">
       <div className="app-wrapper image-text-holder">
-        <div className="image-holder"></div>
+        <div className="image-holder" data-aos="zoom-in-up"></div>
 
-        <p className="text-holder">
+        <p className="text-holder" data-aos="fade-up">
           The premise is simple: Leverage global tech talent through skilled
           immigration to create a platform that supports existing small
           businesses and acts as a training ground to re-skill the local
           population.
         </p>
       </div>
-      <div className="app-wrapper company-logos _flex a-center">
+      <div className="app-wrapper company-logos _flex a-center" data-aos="fade-up">
         <div className="text">
           <p>With the support of</p>
         </div>

@@ -7,7 +7,7 @@ export default function CareersJoinUs() {
     <div className="app-container">
       <div className="app-wrapper careers-join-us">
         <div className="careers-join-us__values-grid">
-          <div className="__heading">
+          <div className="__heading" data-aos="fade-up">
             <h2>Our Values</h2>
             <p>
               We believe in providing simple solutions to the tough problems
@@ -26,7 +26,7 @@ export default function CareersJoinUs() {
 
 function Value({ data: { title, description }, index }) {
   return (
-    <div className="value">
+    <div className="value" data-aos="fade-up">
       <svg
         width="48"
         height="48"

@@ -8,9 +8,9 @@ export default function HomeContact() {
   return (
     <div className=" home-contact">
       <div className="_flex  home-contact__form__wrapper">
-        <div className="home-contact__map">map na</div>
+        <div className="home-contact__map" data-aos="fade-up"></div>
 
-        <form action="" className="home-contact__form">
+        <form action="" className="home-contact__form" data-aos="fade-up">
           <BaseInput labelText="Full name *" placeholder="Julia William" />
           <BaseInput labelText="Email *" placeholder="you@example.com" />
           <BaseInput labelText="Company *" placeholder="Abc Limited" />
@@ -21,7 +21,7 @@ export default function HomeContact() {
           <BaseButton message>Send a Message</BaseButton>
         </form>
 
-        <div className="links">
+        <div className="links" data-aos="fade-left">
           <a href="/" className="link">
             <svg
               width="11"

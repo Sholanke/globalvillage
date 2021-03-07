@@ -4,7 +4,7 @@ import "./index.scss";
 export default function AboutWhoWeAre() {
   return (
     <div className="app-container about-who-we-are">
-      <div className="app-wrapper about-who-we-are__grid">
+      <div className="app-wrapper about-who-we-are__grid" data-aos="fade-up">
         <div>
           <div className="heading">
             <p className="co-green">Who we are</p>

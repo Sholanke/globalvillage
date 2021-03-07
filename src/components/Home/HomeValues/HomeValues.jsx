@@ -6,7 +6,7 @@ export default function HomeValues() {
   return (
     <div className="app-container home-values">
       <div className="app-wrapper home-values__grid">
-        <div className="heading">
+        <div className="heading" data-aos="fade-up">
           <h1>Our Values</h1>
           <p>
             We believe in providing simple solutions to the tough problems with
@@ -24,7 +24,7 @@ export default function HomeValues() {
 
 function Value({ data: { title, description }, index }) {
   return (
-    <div className="value">
+    <div className="value" data-aos="fade-up">
       <svg
         width="48"
         height="48"

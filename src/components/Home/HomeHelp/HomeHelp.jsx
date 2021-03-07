@@ -3,7 +3,7 @@ import "./index.scss";
 
 export default function HomeHelp() {
   return (
-    <div className="app-container home-help">
+    <div className="app-container home-help" data-aos="fade-up">
       <div className="app-wrapper">
         <h1>We’re here to help</h1>
         <p>

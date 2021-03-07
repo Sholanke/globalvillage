@@ -8,7 +8,7 @@ export default function HomeHero() {
   return (
     <section className="app-container _flex a-center home-hero">
       <div className="app-wrapper  _flex">
-        <div className="home-hero__text-holder">
+        <div className="home-hero__text-holder" data-aos="fade-up">
           <h1 className="heading">Get Notified When we Launch</h1>
           <p className="description">
             Global Villages' solution is a three-pronged approach to stimulate
@@ -18,14 +18,17 @@ export default function HomeHero() {
 
           <div className="search-bar__wrapper">
             <form className="_flex search-bar__form">
-              <BaseInput labelText="Subscribe to get notified when we go live" placeholder="Email Address" />
+              <BaseInput
+                labelText="Subscribe to get notified when we go live"
+                placeholder="Email Address"
+              />
               <BaseButton>
                 <span className="button-text">Get Notified</span>
               </BaseButton>
             </form>
           </div>
         </div>
-        <div className="home-hero__image-holder">
+        <div className="home-hero__image-holder" data-aos="zoom-in-up">
           <img src={homeHeroImage} alt="" srcSet="" />
         </div>
       </div>

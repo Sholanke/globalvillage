@@ -18,6 +18,9 @@ function RoutesSwitch() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    window.AOS.init({
+      duration: 700
+    });
   }, [location]);
 
   return (
