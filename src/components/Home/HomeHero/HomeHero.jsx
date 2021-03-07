@@ -18,7 +18,7 @@ export default function HomeHero() {
 
           <div className="search-bar__wrapper">
             <form className="_flex search-bar__form">
-              <BaseInput labelText="Subscribe to get notified when we go live" />
+              <BaseInput labelText="Subscribe to get notified when we go live" placeholder="Email Address" />
               <BaseButton>
                 <span className="button-text">Get Notified</span>
               </BaseButton>
